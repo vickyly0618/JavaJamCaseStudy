@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>JavaJam Coffee House</title>
+        <meta charset=“utf-8”>
+        <link rel="stylesheet" href="./css/style_001.css">
+        <script src="./js/jobs.js"></script>
+    </head>
+
+    <body>
+        <div class="wrapper">
+
+
+        <header>
+            <img id="img_logo" src="./img/javajam_logo.PNG" alt="javajam_logo">
+        </header>
+
+        <nav id="navbar">
+            <b>
+                <a href="index.html">Home</a> &nbsp;<br>
+                <a href="menu.php">Menu</a> &nbsp;<br>
+                <a href="music.html">Music</a> &nbsp;<br>
+                <a href="jobs.html">Jobs</a> &nbsp;<br>
+                <a href="update.php">Price Update</a> &nbsp;<br>
+                <a href="index.php">Sales Report</a> &nbsp;<br>
+
+            </b>
+        </nav>
+
+        <div class="content">
+            <h2>Jobs at JavaJam</h2>
+            <p>
+                Want to work at JavaJam? Fill out the form below to start your application. <br>
+                Required fields are marked - *
+            </p>
+            
+            <form action="" onsubmit="ValidationForm()">
+                <div class="label">
+                    <label for="">*Name: </label>
+                    <label for="">*Email: </label>
+                    <label for="">Start Date: </label>
+                    <label for="">*Experience: </label> 
+                </div>
+                <div class="div_input">
+                    <!-- <label for="" style="display:inline">*Name: </label>  -->
+                    <input class="input_field_1" id="name" type="text" required="True" placeholder="john doe"onchange="ValidateName()"><p style="display:inline; color:red;" id="wname" class="warning"></p><br>
+                    
+                    <!-- <label for="" style="display:inline">*Email: </label> -->
+                    <input class="input_field" id="email" type="email" required="True" placeholder="john-doe.e@123.com" onchange="ValidateEmail()"> <p style="display:inline; color:red;" id="wemail" class="warning"></p><br>
+                   
+                    <!-- <label for="" style="display:inline">Start Date: </label>  -->
+                    <input class="input_field"  id="date" type="date" name="date" placeholder="DD/MM/YY" onchange="vdate(this.value)"> <p style="display:inline; color:red;" id="wdate" class="warning"></p><br>
+                   
+                    <!-- <label for="" style="display:inline">*Experience: </label> -->
+                    <textarea class="input_field" id="experience" name="" id="" cols="30" rows="2" required="True" placeholder="Description"  onchange="ValidateExp()"></textarea> <p style="display:inline; color:red;" class="warning" id="wexp"></p> <br>
+                </div>
+                <input class="input_field"  id="btn_submit" type="submit" value="Apply Now">
+
+            </form>
+
+        </div>
+
+        <footer>
+            <small><i>Copyright &copy; 2014 JavaJam Coffee House</i></small><br>
+            <small><a href="mailto:yan@liu.com">yan@liu.com</a></small>
+        </footer>
+    </div>
+    </body>
+</html>
